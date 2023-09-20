@@ -10,7 +10,7 @@
 <main class="form-signin">
     <form id="form-login" action="<?php echo base_url('login/do_login'); ?>" method="post">
     <img class="mb-4" src="<?= base_url() ?>/img/logo.png" alt="" width="72">
-    <h1 class="h3 mb-3 fw-normal">PT. TEMPO SCAN PASIFIC Tbk.</h1>
+    <h1 class="h3 mb-3 fw-normal">Template</h1>
 
     <div class="form-floating">
         <input type="text" class="form-control" id="username" name="username" placeholder="Username">

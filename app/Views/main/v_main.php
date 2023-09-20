@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title><?php echo $title . ' - Satuan Hasil' ?></title>
+    <title><?php echo $title . ' - Template' ?></title>
     <link href="<?= base_url() ?>/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="<?= base_url() ?>/vendor/fontawesome-free/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="<?= base_url() ?>/vendor/DataTables/datatables.min.css"/>
@@ -49,7 +49,7 @@
                         <i class="fa fa-bars"></i>
                     </a>
                     <h3 class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-                        <strong>TSP</strong>&nbsp;-&nbsp;Satuan Hasil
+                        <strong>Template</strong>&nbsp;-&nbsp;CI-4
                     </h3>
             
                     <div class="col-md-3 text-end">

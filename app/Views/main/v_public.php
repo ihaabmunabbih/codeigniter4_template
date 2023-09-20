@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title><?php echo $title . ' - TUFMF' ?></title>
+    <title><?php echo $title . ' - Template' ?></title>
     <link href="<?= base_url() ?>/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="<?= base_url() ?>/vendor/fontawesome-free/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="<?= base_url() ?>/vendor/DataTables/datatables.min.css"/>
