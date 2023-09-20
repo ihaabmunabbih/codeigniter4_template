@@ -1,0 +1,5 @@
+.error {
+    color: red !important;
+    border-color: red !important;
+    text-align: left !important;
+}

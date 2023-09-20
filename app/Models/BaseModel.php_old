@@ -1,0 +1,45 @@
+<?php
+namespace App\Models;
+
+use CodeIgniter\Model;
+
+class BaseModel extends Model
+{
+	public function __construct() {
+		$this->db = \Config\Database::connect();
+	}
+
+	public function selectData($table, $where = "")
+	{
+		return $this->db->query("select * from $table $where");
+	}
+
+	public function insertData($table, $data)
+	{
+		$this->db->table($table)->insert($data);
+	}
+
+	public function deleteData($table, $data)
+	{
+		$this->db->table($table)->delete($data);
+	}
+
+	public function updateData($table, $data, $where)
+	{
+		$this->db->table($table)->update($data, $where);
+	}
+
+	public function getMenu($level) {
+		$query 		= $this->db->query('SELECT * FROM modul WHERE user_group like "%'. strtolower($level) .'%" ORDER BY urutan');
+		$results	= $query->getResult();
+
+		return $results;
+	}
+
+	public function getSubMenu($id_parent) {
+		$query 		= $this->db->query('SELECT * FROM sub_modul WHERE id_parent = "'. $id_parent .'" ORDER BY urutan');
+		$results	= $query->getResult();
+
+		return $results;
+	}
+}
